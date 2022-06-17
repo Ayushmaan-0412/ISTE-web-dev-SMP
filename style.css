@@ -1,0 +1,118 @@
+
+.heading{
+    font-style: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: aqua;
+    text-align: center;
+    text-decoration-line: underline;
+}
+html{
+    border: 5px solid coral;
+    padding: 10px;
+    background-color: blanchedalmond;
+}
+#para{
+    font-family: 'Lucida Sans';
+    font-size: medium;
+    color: chartreuse;
+    text-align:center;
+    
+}
+input[type=text] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 4px;
+    background-color:blanchedalmond;
+    color: white;
+  }
+  input[type=email]{
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 4px;
+    background-color:blanchedalmond;
+    color: white;
+  }
+  input[type=number]{
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 4px;
+    background-color:blanchedalmond;
+    color: white;
+
+  }
+  input[type=date]{
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 4px;
+    background-color:blanchedalmond;
+    color: white;
+
+  }
+  .button{
+    text-align: center;
+  }
+  #b{
+  background-color: wheat 
+  color:rebeccapurple;
+  text-align :center;
+  }
+
+  #b:hover {
+    background-color: lightgreen; 
+    color: wheat;
+
+  }
+  
+  
+  label{
+    font-family: Helvetica;
+    font-size: medium;
+    color:deepskyblue;
+  }
+  #img{
+    height: 200px;
+    width: 200px;
+    opacity: 0.5;
+    right: 50px;
+
+    }
+  .card-body{
+    font-family: 'Trebuchet MS';
+    color: teal;
+    text-align: center;
+    align-items: center;
+  }
+  .card-text{
+    font-family: "Gill Sans";
+    color: gold;
+    align-items: center;
+  }
+  .text-muted{
+    float: left;
+  }
+  
+  .head{
+    font-family: 'Courier New';
+    font-style: italic;
+    color: cornflowerblue;
+  }
+  .container{
+    font-style: italic;
+    cursor:cell;  
+    float: left; 
+  }
+  .container:hover input ~ .check {  
+    background-color: gray;  
+  }  
+  .checkbox {
+    opacity:0.5;
+  }
+  

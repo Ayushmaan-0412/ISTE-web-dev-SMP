@@ -5,12 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
-    <h2><strong>Register Yourself </strong></h2>
-    <p>Your data is safe with us. We are collecting this data to know about you . Knowing will help us</p>
-    <h2><strong>Fill this from</strong></h2>
-    <form action="/Assignment1.html" method="post">
+    <nav class="navbar navbar-expand-lg bg-light " style="color: red;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Hello User</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Options
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Language</a></li>
+                  <li><a class="dropdown-item" href="#">Programme</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Exit</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    
+    <h2 class="heading"><strong>Register Yourself </strong></h2>
+    <p id="para">Your data is safe with us,
+       We are collecting this data to know about you, knowing you will help us.</p>
+    <div class="card mb-3">
+      
+      <div class="card-body">
+        <h5 class="card-title">Application form</h5>
+        <img id="img" src="https://tse1.mm.bing.net/th?id=OIP.8sDY1kKhXMVF8ppF1ERfvgHaJp&pid=Api&P=0&w=133&h=174" alt="Error Loading Image">
+        <p class="card-text">Fill the given form to learn more about programming languages.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        Select coding level
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">Beginner</a></li>
+        <li><a class="dropdown-item" href="#">Intermediate</a></li>
+        <li><a class="dropdown-item" href="#">Expert</a></li>
+      </ul>
+    </div>
+    
+    <form class="form" action="/C:\Users\sriva\OneDrive\Desktop\New folder" method="post">
      <label for="username">First Name:</label>
      <input type="text" name="username" id="username"><br><br>
      <label for="lastname">Last Name:</label>
@@ -21,31 +78,43 @@
      <input type="number" name="age" id="age"><br><br>
      <label for="date">Date of birth:</label>
      <input type="date" name="myDate" id="date" value="1"><br><br>
-     <p>Select Programming Level</p>
-     <input type="radio" id="beginner" name="fav_language" value="beginner">
-     <label for="beginner">Beginner</label><br>
-     <input type="radio" id="intermediate" name="fav_language" value="intermediate">
-     <label for="intermediate">Intermediate</label><br>
-     <input type="radio" id="expert" name="fav_language" value="expert">
-     <label for="expert">Expert</label>
-    <h3>Select known programming languages</h3>
-    <label for="language">C++</label>
-    <input type="checkbox" id="language" name="programming language" value="C++">
-    <label for="language">R</label>
-    <input type="checkbox" id="language" name="programming language" value="R">
-    <label for="language">Java</label>
-    <input type="checkbox" id="language" name="programming language" value="Java">
-    <label for="language">Python</label>
-    <input type="checkbox" id="language" name="programming language" value="Python">
-    <label for="language">Pascal</label>
-    <input type="checkbox" id="language" name="programming language" value="Pascal"><br><br>
-    <input type="hidden" value="Declaration" id="xyz">
+     <h3 class="head">Select coding level</h3>
+     <label class="container" for="beginner">Beginner
+      <input type="radio" id="beginner" name="fav_language" value="beginner">
+      <span class="check"></span>
+     </label>
+     <label class="container" for="intermediate">Intermediate
+      <input type="radio" id="intermediate" name="fav_language" value="intermediate">
+      <span class="check"></span>
+     </label>
+     <label class="container" for="expert">Expert
+      <input type="radio" id="expert" name="fav_language" value="expert">
+      <span class="check"></span>
+    </label><br><br>
+     <br><br><h3 class="heading">Select known programming languages</h3>
+    <div class="checkbox">
+      <label for="language">C++</label>
+      <input  type="checkbox" id="language" name="programming language" value="C++">
+      <label for="language">R</label>
+      <input  type="checkbox" id="language" name="programming language" value="R">
+      <label for="language">Java</label>
+      <input type="checkbox" id="language" name="programming language" value="Java">
+      <label for="language">Python</label>
+      <input  type="checkbox" id="language" name="programming language" value="Python">
+      <label for="language">Pascal</label>
+      <input  type="checkbox" id="language" name="programming language" value="Pascal">
+    </div>
     
-    <input type="submit" value="Submit form" id="submit">
+    <div class="button"> 
+      <button id="b" type="button">Submit form</button>
+    </div>
+   
     </form>
     <footer>
-        <h3>Thank you for visting!</h3>
+        <h3 class="heading">Thank you for visting!</h3>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 
     
